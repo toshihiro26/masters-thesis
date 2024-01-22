@@ -9,14 +9,14 @@
 - 動作判断のLLMへの入力
 
 ### 動作生成における動作と対話の関係のまとめ
-texfile/formulation.tex
+texfile/formulation.tex(https://github.com/toshihiro26/masters-thesis/blob/main/texfile/formulation.tex)
 
-**追加に至った理由を追記**
+**※追加に至った理由を追記**
 
 ### 動作生成の手法の整頓
-texfile/concept.tex
+texfile/concept.tex(https://github.com/toshihiro26/masters-thesis/blob/main/texfile/concept.tex)
 
-**患者動作の生成手法の一連の流れを記述（ただし，細かく記述していく必要あり）**
+**※患者動作の生成手法の一連の流れを記述（ただし，細かく記述していく必要あり）**
 
 ### 動作判断のLLMへの入力
 **より良い方法を見つけたい**
