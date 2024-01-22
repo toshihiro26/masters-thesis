@@ -27,6 +27,7 @@ texfile/concept.tex(https://github.com/toshihiro26/masters-thesis/blob/main/texf
 - 突貫で作ったのでかなりハードコーディング
 - 主訴に関しては，無理やり結合した
 
+#### 現状のプロンプト
 ~~~
 system 
 # 役割
