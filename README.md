@@ -2,4 +2,13 @@
 
 ## 途中経過
 判断をLLMにやらせてみた．
-[checklog_c01-02-01.txt](https://github.com/toshihiro26/masters-thesis/files/14004145/checklog_c01-02-01.txt)
+'''
+# 役割
+あなたの仕事は対話ログに動作をつけるべきか判断することです．
+# 出力形式
+出力は次の形式のJSON文字列で返してください。
+{
+"判別結果1":{"対象の対話ログ": string, "判断理由": string},
+...
+}
+'''
