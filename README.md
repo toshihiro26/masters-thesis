@@ -21,7 +21,8 @@ texfile/concept.tex(https://github.com/toshihiro26/masters-thesis/blob/main/texf
 ### 動作判断のLLMへの入力
 **より良い方法を見つけたい**
 
-とにかく一度判断をLLMにやらせてみた．　　
+とにかく一度判断をLLMにやらせてみた．  
+
 注意  
 - 突貫で作ったのでかなりハードコーディング
 - 主訴に関しては，無理やり結合した
