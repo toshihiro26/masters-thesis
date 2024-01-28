@@ -25,7 +25,7 @@ True-positive & True - Negative & False - Positive \\hline
 
 \subsubsection {識別結果の詳細}
 今回の判別結果で生成された対話ログには主に２つの種類がある．
-1つ目が，直接主訴に関する単語が出現する対話ログであり，医療面接における自身の症状や不安を医師に伝える説明の際に主訴に関する対話ログに動作を付与する判別結果が出た．
+1つ目が，直接主訴に関する単語が出現する対話ログであり，医療面接における自身の症状や不安を医師に伝える説明の際に主訴に関する対話ログに動作を付与する判別結果が出た．検出された対話ログの数は以下のとおりである．
 
 ”判別結果” 　（主訴：）
   対象対話ログ  :
@@ -33,6 +33,12 @@ True-positive & True - Negative & False - Positive \\hline
     適当な動作　:
 
 この種類の対話ログに関しては，LLMでの判別結果と人手でタグ付けしたものがおおよそ一致しており，そのほとんどが検出できた．
+検出された対話ログの数は以下のとおりである．
+
+\begin{tabular}{|l|r|r|} \hline
+True-positive & True - Negative & False - Positive \\hline
+131 & 85 & 20 \\hline
+\end {tabular}
 
 2つ目は，主訴に関する単語は出現していないが関連する内容である対話ログであり，医師の質問に対して主訴に直接関わる応答文の対話ログに判別された．
 
@@ -41,8 +47,13 @@ True-positive & True - Negative & False - Positive \\hline
          理由  ：
     適当な動作　:
 
-この種類の対話ログに関してはLLMで判別された対話ログのうち，人手でタグ付けしたものと比較したときに検出できていないものも存在し，検出できた対話ログの数は以下のとおりである．
+この種類の対話ログに関してはLLMで判別された対話ログのうち，人手でタグ付けしたものと比較したときに，タグ付けされたものと一致しているものと一致しないものが存在した．
+検出された対話ログの数は以下のとおりである．
 
+\begin{tabular}{|l|r|r|} \hline
+True-positive & True - Negative & False - Positive \\hline
+131 & 85 & 20 \\hline
+\end {tabular}
 
 3つ目は，直接主訴に関係していないが主訴に関連していると思われる症状に関する質問に対する応答文の対話ログに判別された．
 
@@ -50,6 +61,14 @@ True-positive & True - Negative & False - Positive \\hline
   対象対話ログ  :
          理由  ：
     適当な動作　:
+
+基本的に判別比較における"True - Negative"に分類されたのはこの種類の対話ログであり，人手でのタグ付け作業においても，実際の医療面接の動画と比較して，動作をつける必要がないと判断した．
+検出された対話ログの数は以下のとおりである．
+
+\begin{tabular}{|l|r|r|} \hline
+True-positive & True - Negative & False - Positive \\hline
+131 & 85 & 20 \\hline
+\end {tabular}
 
 \subsubsection*{生成された患者動作}
 それぞれの実験での動作の一覧を記載する（）
